@@ -29,8 +29,6 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: shekar1925/java-github-action-image
-        tags: latest
         registry: docker.io
-        dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
