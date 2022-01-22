@@ -26,8 +26,8 @@ jobs:
       run: mvn clean install
 
     - uses: mr-smithers-excellent/docker-build-push@v5
-    name: Build & push Docker image
-    with:
+      name: Build & push Docker image
+      with:
       image: shekar1925/java-github-action-image
       tags: v1, latest
       registry: docker.io
