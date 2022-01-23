@@ -28,7 +28,6 @@ jobs:
     -  name: Build & push Docker image   
        uses: mr-smithers-excellent/docker-build-push@v5
        with:
-       
         image: shekar1925/java-github-action-image
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
