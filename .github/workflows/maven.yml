@@ -28,7 +28,7 @@ jobs:
 
     - name: Build & push Docker image 
 
-      uses: mr-smithers-excellent/docker-build-push@v2
+      uses: docker/docker-build-push@v2
       with:
         image: shekar1925/java-github-action-image
         tag: latest
