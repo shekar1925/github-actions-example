@@ -28,10 +28,10 @@ jobs:
 
     - name: Build & push Docker image 
 
-      uses: mr-smithers-excellent/docker-build-push@v5
+      uses: mr-smithers-excellent/docker-build-push@v2
       with:
         image: shekar1925/java-github-action-image
-        tags: --all-tags
+        tags: latest
         registry: docker.io
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
